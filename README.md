@@ -20,4 +20,10 @@ Because the amount of data pre-processed data is very large, for AMR-to-Text gen
 * [Image Caption](https://github.com/ruotianluo/ImageCaptioning.pytorch)
 
 
+## Run code
+
+For nmt, first, go into the **bert-dynamic-denoise** directory.
+
+
+For AMR-to-Text, go into the **bert-dynamic-self** directory.
 
