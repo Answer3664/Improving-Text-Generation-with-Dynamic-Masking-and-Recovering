@@ -1,5 +1,5 @@
 # Improving-Text-Generation-with-Dynamic-Masking-and-Recovering
-The repository contains the code for our paper ["Improving Text Generation with Dynamic Masking and Recovering"](https://www.ijcai.org/proceedings/2021/534) in IJCAI-2021
+The repository contains the code for our paper ["Improving Text Generation with Dynamic Masking and Recovering"](https://www.ijcai.org/proceedings/2021/534) in IJCAI-2021.
 
 ## Requirements
 For NMT and AMR-to-Text generation:
@@ -23,7 +23,7 @@ We upload the datasets we used for NMT task. However, due to the amount of data 
 ## NMT
 
 For NMT, first, go into the **bert-dynamic-denoise** directory.
-Before run with *wmt14en-de.pl* and *iwslt14.pl*, you need to modify the working directory inside.
+Before run with ```wmt14en-de.pl``` and ```iwslt14.pl```, you need to modify the working directory inside.
  ```perl
     #!bin/perl
     my $cur_dir = "/home/lzd/mt-exp/wmt14-en2de";
@@ -35,7 +35,7 @@ Before run with *wmt14en-de.pl* and *iwslt14.pl*, you need to modify the working
  ```
 
 ### Pre-processing, Training and Validation
-You need to set step0-step3 as 1, step4-step5 as 0, such as:
+You need to set ```$step0-$step3``` as 1, ```$step4-$step5``` as 0, such as:
  ```perl
     #!bin/perl
     my $step0 = 1; #move data
@@ -47,7 +47,7 @@ You need to set step0-step3 as 1, step4-step5 as 0, such as:
  ```
 
 ### Decoding
-You need to set step0-step3 as 0, step4 as 1 such as:
+You need to set ```$step0-$step3``` as 0, ```$step4``` as 1 such as:
  ```perl
     #!bin/perl
     my $step0 = 0; #move data
@@ -57,7 +57,7 @@ You need to set step0-step3 as 0, step4 as 1 such as:
     my $step4 = 1; #test
     my $step5 = 0; #infer with ensemble model
 ```
-Also, you need to specify the **$best_iteration** to run step4.
+Also, you need to specify the ```$best_iteration``` to run testing.
 ```
 if ($step4) {
   my $best_iteration = "290000";
@@ -76,7 +76,7 @@ if ($step4) {
 ```
 Then you can get the final results in the directory you specified.
 
-Also note that, for results in our paper, we do not perform step5.
+Also note that, for results in our paper, we do not perform ```$step5```.
 
 ## AMR
 For AMR-to-Text, go into the **bert-dynamic-self** directory, then follow the same steps as NMT.
