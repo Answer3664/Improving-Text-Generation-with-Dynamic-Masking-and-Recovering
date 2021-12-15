@@ -13,7 +13,7 @@ For Image Caption:
 
 ## Datasets
 
-Because the amount of data pre-processed data is very large, for AMR-to-Text generation and Image Caption tasks, we give repositories to the data processing that we use.
+We upload the datasets we used for NMT task. However, due to the amount of data pre-processed data is very large, for AMR-to-Text generation and Image Caption tasks, we give repositories to the data processing that we use.
 * [WMT14EN-DE](https://drive.google.com/file/d/1r_Bv6_a8ylGVOkT1MaRmEaQ4OHylIVOA/view?usp=sharing)
 * [IWSLT14DE-EN](https://drive.google.com/file/d/1hotynRPVR1anNdjuThOOLF6gg_B1yWLX/view?usp=sharing)
 * [AMR-to-Text](https://github.com/Amazing-J/structural-transformer)
