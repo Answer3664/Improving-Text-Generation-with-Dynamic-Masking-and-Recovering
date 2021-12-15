@@ -6,7 +6,7 @@ use warnings;
 #use Cwd;
 
 #my $cur_dir = getcwd;
-my $t2t_dir = "/home/lzd/transmodel/bert-dynamic-denoise-v3";
+my $t2t_dir = "/home/lzd/transmodel/bert-dynamic-denoise";
 my $workspace = "/home/lzd/mt-exp/iwslt14-de2en/bert-denoise";
 
 my $gpu_id = 1;
