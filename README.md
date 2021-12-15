@@ -1,4 +1,4 @@
-# Text-Genreation-with-DM-and-MLM
+# Improving-Text-Generation-with-Dynamic-Masking-and-Recovering
 The repository contains the code for our paper ["Improving Text Generation with Dynamic Masking and Recovering"](https://www.ijcai.org/proceedings/2021/534) in IJCAI-2021
 
 ## Requirements
