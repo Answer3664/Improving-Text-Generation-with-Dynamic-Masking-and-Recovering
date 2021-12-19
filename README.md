@@ -22,7 +22,7 @@ We upload the datasets we used for NMT task. However, due to the amount of data 
 
 ## NMT
 
-For NMT, first, go into the **bert-dynamic-denoise** directory.
+For NMT, first, go into the **dynamic-denoise-nmt** directory.
 Before run with ```wmt14en-de.pl``` and ```iwslt14.pl```, you need to modify the working directory inside.
  ```perl
     #!bin/perl
@@ -30,7 +30,7 @@ Before run with ```wmt14en-de.pl``` and ```iwslt14.pl```, you need to modify the
     my $workspace = "$cur_dir/bert-dynamic-ende";
     my $gpu_id = "1";
     my $python3 = "/home/lzd/anaconda3/bin/python3";
-    my $t2t_dir = "/home/lzd/transmodel/bert-dynamic-denoise";
+    my $t2t_dir = "/home/lzd/transmodel/dynamic-denoise-nmt";
     my $multi_bleu = "/home/lzd/script/multi-bleu.perl";
  ```
 
@@ -79,7 +79,7 @@ Then you can get the final results in the directory you specified.
 Also note that, for results in our paper, we do not perform ```$step5```.
 
 ## AMR
-For AMR-to-Text, go into the **bert-dynamic-self** directory, then follow the same steps as NMT.
+For AMR-to-Text, go into the **dynamic-denoise-amr** directory, then follow the same steps as NMT.
 
 
 ## Cite 
